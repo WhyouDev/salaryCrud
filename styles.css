@@ -10,13 +10,14 @@ table.list{
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px  ;
     text-align: left;
     padding: 8px;
 }
-tr:nth-child(even),table.list thead>tr {
+
+/* tr:nth-child(even),table.list thead>tr {
     background-color: #dddddd;
-}
+} */
 
 input[type=text], input[type=number] {
     width: 100%;
