@@ -17,8 +17,7 @@ var gaji = document.getElementById("gj").value;
         var d = eval(gaji) - 200000;
         var e = eval(gaji) * 2 / 100;
         var f = eval(gaji) * 2 / 100;
-        
-        
+        var g = eval(gaji) + eval(a) + eval(b) + eval(c) + eval(d) + eval(e) + eval(f);
         
         document.getElementById("jmstk").value = a;
         document.getElementById("th").value = b;
@@ -26,18 +25,22 @@ var gaji = document.getElementById("gj").value;
         document.getElementById("tdkHdr").value = d;
         document.getElementById("iuran").value = e;
         document.getElementById("bpjs").value = f;
+        document.getElementById("tot").value = g;
         }
 </script>
 </head>
 <body>
 <pre>
 Gaji            <input type="text" id="gj">        
+
 Jamsostek       <input type="text" id="jmstk">
 Telat Hadir     <input type="text" id="th">
 PPH 21          <input type="text" id="pph">
 Tidak Hadir     <input type="text" id="tdkHdr">
 Iuran Pensiun   <input type="text" id="iuran">
 BPJS Kesehatan  <input type="text" id="bpjs">
+
+<b>Total</b>    <input type="text" id="tot">
             <input type="button" value="Hitung" onclick="hitung()">
 </pre>
 </body>
