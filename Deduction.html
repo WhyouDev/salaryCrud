@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Hitung Potongan dari gaji</title>
+<script type="text/javascript">
+function hitung()
+{
+        if(document.getElementById("gj").value == "")
+        {
+        alert("Gaji tidak Boleh Kosong");
+        document.getElementById("gj").focus;
+        return false;
+        }
+var gaji = document.getElementById("gj").value;
+        var a = eval(gaji) * 2 / 100;
+        var b = eval(gaji) - 50000;
+        var c = eval(gaji) * 1 / 100;
+        var d = eval(gaji) - 200000;
+        var e = eval(gaji) * 2 / 100;
+        var f = eval(gaji) * 2 / 100;
+        
+        
+        
+        document.getElementById("jmstk").value = a;
+        document.getElementById("th").value = b;
+        document.getElementById("pph").value = c;
+        document.getElementById("tdkHdr").value = d;
+        document.getElementById("iuran").value = e;
+        document.getElementById("bpjs").value = f;
+        }
+</script>
+</head>
+<body>
+<pre>
+Gaji            <input type="text" id="gj">        
+Jamsostek       <input type="text" id="jmstk">
+Telat Hadir     <input type="text" id="th">
+PPH 21          <input type="text" id="pph">
+Tidak Hadir     <input type="text" id="tdkHdr">
+Iuran Pensiun   <input type="text" id="iuran">
+BPJS Kesehatan  <input type="text" id="bpjs">
+            <input type="button" value="Hitung" onclick="hitung()">
+</pre>
+</body>
+</html>
