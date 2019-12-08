@@ -11,10 +11,12 @@ function hitung()
         return false;
         }
 var gaji = document.getElementById("gj").value;
+var tltHdr = document.getElementById("th").value;
+var tdkHdr = document.getElementById("tdkHdr").value;
         var a = eval(gaji) * 2 / 100;
-        var b = eval(gaji) - 50000;
+        var b = eval(tltHdr) * 50000 - eval(gaji);
         var c = eval(gaji) * 1 / 100;
-        var d = eval(gaji) - 200000;
+        var d = eval(tdkHdr) * 200000 - eval(gaji);
         var e = eval(gaji) * 2 / 100;
         var f = eval(gaji) * 2 / 100;
         var g = eval(gaji) + eval(a) + eval(b) + eval(c) + eval(d) + eval(e) + eval(f);
@@ -34,9 +36,9 @@ var gaji = document.getElementById("gj").value;
 Gaji            <input type="text" id="gj">        
 
 Jamsostek       <input type="text" id="jmstk" disabled>
-Telat Hadir     <input type="text" id="th" disabled>
+Telat Hadir     <input type="text" id="th" >
 PPH 21          <input type="text" id="pph" disabled>
-Tidak Hadir     <input type="text" id="tdkHdr" disabled>
+Tidak Hadir     <input type="text" id="tdkHdr" >
 Iuran Pensiun   <input type="text" id="iuran"disabled>
 BPJS Kesehatan  <input type="text" id="bpjs"disabled>
 
